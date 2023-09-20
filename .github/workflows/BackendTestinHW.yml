@@ -22,4 +22,4 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-htmlextra
     - name: Run tests
-      run: newman run src/FinalBackendHWGoncharov.postman_collection -e src/OnlineSchool.BackendHW.postman_environment.json -r cli.htmlextra.junit
+      run: newman run src/FinalBackendHWGoncharov.postman_collection -e src/OnlineSchool.BackendHW.postman_environment.json -r cli,htmlextra,junit
