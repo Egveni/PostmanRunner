@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Backend HW Goncharov" tests="26" time="5.175">
+  <testsuite name="lecture-3 / Creating a category E2E / Creating a new admin" id="ac6bcae1-1491-4682-9167-c5dcb4f7b6a2" timestamp="2023-09-20T14:33:24.680Z" tests="8" failures="0" errors="0" time="0.490">
+    <testcase name="Admin successefully created. Response status code is 200" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains  id field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains  a username field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains an email field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a firstName field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a lastName field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a role field" time="0.490" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.490" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Loggin in as admin" id="3a9e6783-e230-45da-856a-5c1e8f4e1e77" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.435">
+    <testcase name="Loggin in as an admin successefully. Response status code is 200" time="0.435" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an admin accessToken" time="0.435" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.435" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Test JWT Authentication as an admin" id="9bd23ab5-1642-444c-a2c2-e7ceb3d1d163" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.020">
+    <testcase name="JWT authentication as an admin is success. Response status code is 200" time="0.020" classname="BackendHwGoncharov"/>
+    <testcase name="Response message contain 'Authentication passed!' confirmation message" time="0.020" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.020" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Creating a new category as admin according requirements" id="55875418-5cb0-4afb-a7d1-216b3e1280a6" timestamp="2023-09-20T14:33:24.680Z" tests="6" failures="0" errors="0" time="0.044">
+    <testcase name="Category is successfully created. Response status code is 200" time="0.044" classname="BackendHwGoncharov"/>
+    <testcase name="Response cantains id field" time="0.044" classname="BackendHwGoncharov"/>
+    <testcase name="id is a non-negative integer" time="0.044" classname="BackendHwGoncharov"/>
+    <testcase name="Response cantains title field" time="0.044" classname="BackendHwGoncharov"/>
+    <testcase name="Title is a non-empty string" time="0.044" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.044" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Сreated category is available by ID" id="6306c916-80a9-4bf4-bae8-8288aa38a193" timestamp="2023-09-20T14:33:24.680Z" tests="6" failures="0" errors="0" time="0.034">
+    <testcase name="Category is successfully created. Response status code is 200" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="id is a non-negative integer" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains title field" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Title is a non-empty string" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.034" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Creating a new category with wrong input" id="d905741b-b8b9-45c4-9da2-2af588c55f87" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.017">
+    <testcase name="Admin can't create new category with wrong input. Status code is 400" time="0.017" classname="BackendHwGoncharov"/>
+    <testcase name="Error message contain requirements to title field" time="0.017" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.017" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a category E2E / Category with wrong input didn't added to the list" id="c269c48f-6ed1-4490-b43b-4052a1bc2523" timestamp="2023-09-20T14:33:24.680Z" tests="1" failures="0" errors="0" time="0.061">
+    <testcase name="List doesn't contain category with wrong input" time="0.061" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Creating a student" id="3d9a8bf5-631f-4fef-a987-dda7de7a5fe3" timestamp="2023-09-20T14:33:24.680Z" tests="8" failures="0" errors="0" time="0.315">
+    <testcase name="Student successfully created. Response status code is 200" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a username field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains an email field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a firstName field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a lastName field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a role field" time="0.315" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.315" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Loggin in as a student" id="c8348224-ff1f-492b-b10a-f86997a12519" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.347">
+    <testcase name="Logging in as a student successfully. Response status code is 200" time="0.347" classname="BackendHwGoncharov"/>
+    <testcase name="Response has a student accessToken" time="0.347" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.347" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Test JWT Authentication as a student" id="7e7f1571-5448-4e27-99eb-078eb37ff78a" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.019">
+    <testcase name="JWT authentication as an admin is success. Response status code is 200" time="0.019" classname="BackendHwGoncharov"/>
+    <testcase name="Response message contain 'Authentication passed!' confirmation message" time="0.019" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.019" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Getting a list of courses as a student" id="fd5aa607-780c-4639-8934-15f63884cd3a" timestamp="2023-09-20T14:33:24.680Z" tests="10" failures="0" errors="0" time="0.733">
+    <testcase name="List of all courses is visible. Status code is 200" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Response is an array" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains id field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains title field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains description field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains visible field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains categoryId field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains likes field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains dislikes field" time="0.733" classname="BackendHwGoncharov"/>
+    <testcase name="List contains created course" time="0.733" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Enrolling choosen course as a student" id="33d68d19-5a91-4691-99af-230469626f74" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.055">
+    <testcase name="Student was enrolled chosen course. Status code is 200" time="0.055" classname="BackendHwGoncharov"/>
+    <testcase name="Result message contains 'You've successfully enrolled the course'" time="0.055" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.055" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Checking that choosen course was enrolled" id="80694bfc-8501-4a29-a1b2-3e7c2e286557" timestamp="2023-09-20T14:33:24.680Z" tests="6" failures="0" errors="0" time="0.024">
+    <testcase name="Status code is 200" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Response is an array" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Each element in the array has a userId" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Each element in the array has a courseId" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="List contains last enrolled course" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.024" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Enrolling the course as a student E2E / Enrolling already enrolled course" id="ff66d37a-9df5-49b1-aef6-152f945602da" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.024">
+    <testcase name="Student can't enroll in the same course twice. Status code is 200" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Result message contains 'You've already enrolled to this course'" time="0.024" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.024" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Creating a new teacher" id="39017722-66a1-4016-a5fe-1456a3ec55ee" timestamp="2023-09-20T14:33:24.680Z" tests="9" failures="0" errors="0" time="0.307">
+    <testcase name="Teacher successfully created. Response status code is 200" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a username field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains an email field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a firstName field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a lastName field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains a role field" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Teacher role value is 2" time="0.307" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.307" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Loggin in as teacher" id="5fe27e71-d01d-45f6-9413-f201069b41cf" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.386">
+    <testcase name="Logging in as a teacher successfully. Response status code is 200" time="0.386" classname="BackendHwGoncharov"/>
+    <testcase name="Response has a teacher accessToken" time="0.386" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.386" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Test JWT Authentication as a teacher" id="794ddd30-f6c5-45a8-b2ff-984f8ad37ba0" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.034">
+    <testcase name="JWT authentication as a teacher is success. Response status code is 200" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Response message contain 'Authentication passed!' confirmation message" time="0.034" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.034" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Getting a list of all categories as a teacher" id="7adc9b4b-5714-4f68-a6ae-f43b3611ad4d" timestamp="2023-09-20T14:33:24.680Z" tests="5" failures="0" errors="0" time="0.070">
+    <testcase name="List of all categories is visible. Status code is 200" time="0.070" classname="BackendHwGoncharov"/>
+    <testcase name="Response is an array" time="0.070" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains id field" time="0.070" classname="BackendHwGoncharov"/>
+    <testcase name="Each element contains title field" time="0.070" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.070" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Creating a course" id="7c1fe5b0-91b4-4c74-9a64-e5178e4a7ccc" timestamp="2023-09-20T14:33:24.680Z" tests="7" failures="0" errors="0" time="0.056">
+    <testcase name="Course is successfully created. Response status code is 200" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains title field" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains categoryId field" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains description field" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains visible field" time="0.056" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.056" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Checking created course by id" id="80a2daba-3f8d-4f62-86e5-f1686c28da8b" timestamp="2023-09-20T14:33:24.680Z" tests="9" failures="0" errors="0" time="0.026">
+    <testcase name="Information about specific course is visible. Status code is 200" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains title field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains categoryId field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains description field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains visible field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains likes field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains dislikes field" time="0.026" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.026" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Creating a new course with invalid input" id="67262420-e31c-418c-999c-1af30f76a077" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.019">
+    <testcase name="Teacher can't create a course with invalid title. Status code is 400" time="0.019" classname="BackendHwGoncharov"/>
+    <testcase name="Error message contains requirements to title field" time="0.019" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.019" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Checking that wrong created course was not added" id="ce79038c-7d09-408c-8a7c-2f9993c37779" timestamp="2023-09-20T14:33:24.680Z" tests="2" failures="0" errors="0" time="0.684">
+    <testcase name="List doesn't contain category with wrong input" time="0.684" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.684" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Adding new material to the course" id="b9684898-a001-4dcd-87d0-632a7a5689e3" timestamp="2023-09-20T14:33:24.680Z" tests="7" failures="0" errors="0" time="0.040">
+    <testcase name="New material was added to the course. Response status code is 200" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an id property" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an title property" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an data property" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an order property" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response has an courseId property" time="0.040" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.040" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Getting material by id" id="15c5dd93-d8d8-474d-8ce1-18df4791decb" timestamp="2023-09-20T14:33:24.680Z" tests="7" failures="0" errors="0" time="0.402">
+    <testcase name="Information about specific material is visible. Status code is 200" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains id field" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains title field" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains data field" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains order field" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response contains courseId field" time="0.402" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.402" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Adding material with invalid input data" id="c9d7bb7e-ce34-453a-b046-0519266c7c7c" timestamp="2023-09-20T14:33:24.680Z" tests="3" failures="0" errors="0" time="0.020">
+    <testcase name="Teacher can't add material with invalid title. Status code is 400" time="0.020" classname="BackendHwGoncharov"/>
+    <testcase name="Error message contains requirements to the title field" time="0.020" classname="BackendHwGoncharov"/>
+    <testcase name="Response time is less than 3000 ms" time="0.020" classname="BackendHwGoncharov"/>
+  </testsuite>
+  <testsuite name="lecture-3 / Creating a new material as a teacher E2E / Checking that wrong created material was not added" id="e2ecdb70-c939-42e5-bf4a-d3bffe2287e3" timestamp="2023-09-20T14:33:24.680Z" tests="1" failures="0" errors="0" time="0.023">
+    <testcase name="List doesn't contain category with wrong input" time="0.023" classname="BackendHwGoncharov"/>
+  </testsuite>
+</testsuites>
