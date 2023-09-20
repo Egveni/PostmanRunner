@@ -23,3 +23,24 @@ jobs:
           npm install -g newman-reporter-htmlextra
     - name: Run tests
       run: newman run src/Lesson3Collection.postman_collection.json -e src/Lesson3env.BackendHW.postman_environment.json -r cli,htmlextra,junit
+    - name: Checkout to gh-pages branch
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        path: gh-pages
+        
+    - name: Copy report to the gh-pages branch
+      uses: crazy-max/ghaction-github-pages@v3
+      with:
+        target_branch: gh-pages
+        build_dir: newman
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        
+    - name: Deploy the report from the gh-pages branch to the website
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: newman
